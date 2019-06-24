@@ -1,0 +1,24 @@
+-> STLS are used for generic programming and Data Structure Concepts
+-> STLS uses Stack Memory instead of Heap Memory like traditional data structures
+1> Container
+2> Iterator
+3> Alogorithms
+4> Vector (class hat supports dynamic array allowing insertions and deletions at the back; memory allocation::non-continuous)
+5> Deque (double ended queue that allows insertion and deletion from both the ends)
+6> List (list is sequence containers allow insertion and deletion from anywhere)
+
+1> Container:[Container, <Header File>, (Iterator)]
+    1.1> Sequence   [{vector <vector> (random access)}, {list <list> (bidirectional)}, {deque <deque> (random access)}]
+    1.2> Associate  [{set <set> (bidirectional)}, {multiset <set> (bidirectional)}, {map <map> (bidirectional)}, {multimap <map> (bidirectional)}]
+    1.3> Derived    [{stack <stack> (no Iterator)}, {queue <queue> (no Iterator)}, {priority-queue <queue> (no Iterator)}]
+
+2> Vector
+    Insert Syntax:
+        insert(iterator, val);
+        insert(iterator, n, val);
+        insert(iterator, InputIterator first, InputIterator last);
+
+        iterator : an iterator defines the position, where new elements are to be inserted
+        val : the val specifies the value of which is to be inserted
+        n : number of times the value is to be occured
+        (first, last) : it defines the range of elements which is to be inserted
